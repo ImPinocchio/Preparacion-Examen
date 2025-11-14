@@ -153,28 +153,28 @@
             txtNombre.Location = new Point(162, 91);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(100, 23);
-            txtNombre.TabIndex = 2;
+            txtNombre.TabIndex = 3;
             // 
             // txtApellido
             // 
             txtApellido.Location = new Point(162, 132);
             txtApellido.Name = "txtApellido";
             txtApellido.Size = new Size(100, 23);
-            txtApellido.TabIndex = 2;
+            txtApellido.TabIndex = 4;
             // 
             // txtCelular
             // 
             txtCelular.Location = new Point(162, 209);
             txtCelular.Name = "txtCelular";
             txtCelular.Size = new Size(100, 23);
-            txtCelular.TabIndex = 2;
+            txtCelular.TabIndex = 7;
             // 
             // txtMail
             // 
             txtMail.Location = new Point(162, 244);
             txtMail.Name = "txtMail";
-            txtMail.Size = new Size(100, 23);
-            txtMail.TabIndex = 2;
+            txtMail.Size = new Size(169, 23);
+            txtMail.TabIndex = 8;
             // 
             // rbSexoM
             // 
@@ -182,7 +182,7 @@
             rbSexoM.Location = new Point(169, 176);
             rbSexoM.Name = "rbSexoM";
             rbSexoM.Size = new Size(80, 19);
-            rbSexoM.TabIndex = 3;
+            rbSexoM.TabIndex = 5;
             rbSexoM.TabStop = true;
             rbSexoM.Text = "Masculino";
             rbSexoM.UseVisualStyleBackColor = true;
@@ -193,7 +193,7 @@
             rbSexoF.Location = new Point(269, 176);
             rbSexoF.Name = "rbSexoF";
             rbSexoF.Size = new Size(78, 19);
-            rbSexoF.TabIndex = 4;
+            rbSexoF.TabIndex = 6;
             rbSexoF.TabStop = true;
             rbSexoF.Text = "Femenino";
             rbSexoF.UseVisualStyleBackColor = true;
@@ -226,6 +226,7 @@
             btnConsultar.TabIndex = 1;
             btnConsultar.Text = "Consultar";
             btnConsultar.UseVisualStyleBackColor = true;
+            btnConsultar.Click += btnConsultar_Click;
             // 
             // panel2
             // 
@@ -324,6 +325,8 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "FormCliente";
             Text = "Cliente";
             panel1.ResumeLayout(false);
